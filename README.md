@@ -28,8 +28,7 @@ For running Clustal omega MSA API python code:
 > pip install --upgrade pip xmltramp2 requests
 
 ```
-- In order to run the MSA, phage_details.csv file should be in same directory where py script is saved.
-- Next, save the clustalo.py script in the same directory.
+- In order to run the MSA, input sequence fasta file and clustalo.py script should be in the same directory.
 - Next, after running the script, the result files are stored in the same direcotry.
 - Last,to run the script following example should be used on terminal or cmd:
 ```
