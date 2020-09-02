@@ -89,15 +89,10 @@ def find_amino_seq(gene_code):
    
    ## To retrieve the sequence in fasta file
    
-   #print(my_records[0])
 for gene_code in my_records:
     seq = find_amino_seq(gene_code)
     #print(">" + seq)
     with open("filename.fasta", "a+") as file:
-        # file.seek(0)
-        # seq = file.readline(100)
-        # if len(seq) > 0:
-        #     file.write("\n")
+    
         file.writelines('>' + seq)
 file.close()
-#SeqIO.write(seq, "my_example1.faa", "fasta")
