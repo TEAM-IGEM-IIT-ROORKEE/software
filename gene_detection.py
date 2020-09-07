@@ -96,4 +96,4 @@ for gene_code in my_records:
     with open("filename.fasta", "a+") as file:
     
         file.writelines('>' + seq)
-file.close()
+    file.close()
