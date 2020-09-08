@@ -18,9 +18,8 @@
 > - sudo apt-get update
 > - sudo apt-get install perl
 
-##### For checking the search_the_db_for_tails(input_bacteria) and find_amino_seq(gene_code) functions of the gene detection code:
+##### For Checking the gene_detection.py code, which basically has two main fnuctions:                                                                                                 1. search_the_db_for_tails(input_bacteria)                                                                                                                                       2. find_amino_seq(gene_code) 
 ```
-- Paste the 'sequence_phages.faa' and 'phage_details.csv' files into the directory which has the python script as well
 - Run the python script with arguments such as search_the_db_for_tails('staphylococcus aureus') or find_amino_seq('YP_009006775.1')
 ```
 > **Can use any of the bacteria from ESKAPE or any gene_code from the phage_details.csv file**
