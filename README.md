@@ -11,16 +11,6 @@ For checking the search_the_db_for_tails(input_bacteria) and find_amino_seq(gene
 ```
 > **Can use any of the bacteria from ESKAPE or any gene_code from the phage_details.csv file , just ensure that none of the letter is capital while using the search_the_db_for_tails(input_bacteria) function**
 
-For running the jpred api on your system using command prompt: 
-```
-- First install perl on your system 
-- Next, go to the directory which has jpredapi file and the seq file as well
-- Then type 'perl jpredapi submit file=filename mode=batch format=fasta email=emailid@domain.com name=my_test_job skipPDB=on'
-on the command prompt.
-```
-> **Here, 'name' and 'skipPDB' parameters are optional but you need to provide other parameters,
-you will recieve the result on the mentioned email id**
-
 For running Clustal omega MSA API python code:
 ```
 - First, python dependency xmltramp2 needs to be installed:
@@ -33,5 +23,17 @@ For running Clustal omega MSA API python code:
 - Last,to run the script following example should be used on terminal or cmd:
 ```
 > python clustalo.py --email <your@email.com> --sequence <sequence_file_name.fasta>
+
+
+For running the jpred api on your system using command prompt: 
+```
+- First install perl on your system 
+- Next, go to the directory which has jpredapi file and the seq file as well
+- Then type 'perl jpredapi submit file=filename mode=batch format=fasta email=emailid@domain.com name=my_test_job skipPDB=on'
+on the command prompt.
+```
+> **Here, 'name' and 'skipPDB' parameters are optional but you need to provide other parameters,
+you will recieve the result on the mentioned email id**
+
 
 
