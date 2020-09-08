@@ -42,7 +42,8 @@ on the command prompt.
 > **Here, 'name' and 'skipPDB' parameters are optional but you need to provide other parameters,
 you will recieve the result on the mentioned email id**
 
-> **For creating the database files such as phage_setails.csv and sequence_phages.faa we used NCBI(National Center for Biotechnology Information) anf Genomenet virushostdb databases. If you also want to make your own set of database files you can take them from these or similar databases.**
+> - **For creating the database files such as phage_setails.csv and sequence_phages.faa we used NCBI(National Center for Biotechnology Information) and Genomenet virushostdb databases.**
+> - **If you also want to make your own set of database files you can take them from these or similar databases.**
 
 
 
