@@ -5,7 +5,7 @@ import csv
 import os,sys
  
 class Gene:
-    def __init__(self,bacteria_name, gene_code, virus_name,gene_name): # constructor for gene class
+    def __initiate__(self,bacteria_name, gene_code, virus_name,gene_name): # constructor for gene class
         self.gene_code = gene_code
         self.virus_name = virus_name
         self.gene_name = gene_name
@@ -38,10 +38,10 @@ def load_csv():
  
 def search_the_db_for_tails(input_bacteria):
     
-    if os.path.isfile('sequence_phages.faa'):
-        file_location = 'sequence_phages.faa'
+    if os.path.isfile('sequence_phages.fasta'):
+        file_location = 'sequence_phages.fasta'
     else:
-        file_location = os.path.join(os.path.dirname(sys.executable), 'sequence_phages.faa')
+        file_location = os.path.join(os.path.dirname(sys.executable), 'sequence_phages.fasta')
     file = open(file_location)
     line = file.readline()
     ans_lists = []
@@ -63,11 +63,11 @@ my_records = search_the_db_for_tails(input_bacteria ="Bacteria_Name")
  
 # FINDING AMINO ACID SEQUENCE FROM FASTA FILE 
  
-def find_amino_seq(gene_code):
-    if os.path.isfile('sequence_phages.faa'):
-       file_location = 'sequence_phages.faa'
+def amino_seq_finder(gene_code):
+    if os.path.isfile('sequence_phages.fasta'):
+       file_location = 'sequence_phages.fasta'
     else:
-         file_location = os.path.join(os.path.dirname(sys.executable), 'sequence_phages.faa')
+         file_location = os.path.join(os.path.dirname(sys.executable), 'sequence_phages.fasta')
     amino_seq = ''
     file = open(file_location)
     found_it = False
@@ -91,7 +91,7 @@ def find_amino_seq(gene_code):
    ## To retrieve the sequence in fasta file
    
 for gene_code in my_records:
-    seq = find_amino_seq(gene_code)
+    seq = amino_seq_finder(gene_code)
     #print(">" + seq)
     with open("filename.fasta", "a+") as file:
     
