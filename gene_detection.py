@@ -58,7 +58,7 @@ def search_phage_tails_from_bacterium(input_bacteria):
                 ans_lists.append([gene_code,gene_name,virus_name,bacteria_name])
         line = file.readline()
     return ans_lists
-my_records = search_the_db_for_tails(input_bacteria ="Bacteria_Name")
+my_records = search_phage_tails_from_bacterium(input_bacteria ="Bacteria_Name")
 
  
 # FINDING AMINO ACID SEQUENCE FROM FASTA FILE 
