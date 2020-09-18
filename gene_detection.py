@@ -36,7 +36,7 @@ def load_csv():
 
 # SEARCHES FOR TAIL FIBER PROTEINS FROM FASTA FILE
  
-def search_the_db_for_tails(input_bacteria):
+def search_phage_tails_from_bacterium(input_bacteria):
     
     if os.path.isfile('sequence_phages.fasta'):
         file_location = 'sequence_phages.fasta'
